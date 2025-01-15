@@ -10,19 +10,33 @@
     justify-content:space-between;
     height: 120px;
     width: 100%;
-    padding: 40px;
+    /* padding: 40px; */
+    padding: 2%;
     background-color: rgb(207, 207, 207);
+}
+
+.logo {
+    max-width: 30%;
 }
 
 .logo-gif {
     max-height: 100%;
     height: auto;
-    max-width: 40%;
-    min-width: 20%;
+    width: 150px
+    /* max-width: 40%; */
+    /* min-width: 30%; */
 }
 
 .links {
-    width: 15%;
+    max-width: 25%;
     display: flex;
     justify-content:space-between;
+}
+
+/* a {
+    margin: 0 10px;
+} */
+
+.video {
+    width: 100%;
 }
