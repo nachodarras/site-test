@@ -36,3 +36,11 @@
 /* a {
     margin: 0 10px;
 } */
+
+.video {
+    width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
