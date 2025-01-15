@@ -2,6 +2,8 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 .header {
@@ -11,12 +13,8 @@
     height: 120px;
     width: 100%;
     /* padding: 40px; */
-    padding: 2%;
+    padding: 3%;
     background-color: rgb(207, 207, 207);
-}
-
-.logo {
-    max-width: 30%;
 }
 
 .logo-gif {
@@ -27,20 +25,20 @@
     /* min-width: 30%; */
 }
 
+.header-blank {
+    min-width: 30px;
+}
+
 .links {
-    max-width: 25%;
+    width: 200px;
+    min-width: 80px;
     display: flex;
     justify-content:space-between;
 }
 
-/* a {
-    margin: 0 10px;
-} */
-
-.video {
-    width: 100%;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-video {
-    max-width: 100%;
-}
+/* Hide the links */
