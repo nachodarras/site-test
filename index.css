@@ -18,10 +18,11 @@
     max-height: 100%;
     height: auto;
     max-width: 40%;
+    min-width: 20%;
 }
 
 .links {
-    width: 200px;
+    width: 15%;
     display: flex;
     justify-content:space-between;
 }
