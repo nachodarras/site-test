@@ -6,27 +6,29 @@
     font-size: 14px;
 }
 
+
+
+
+/* -------- Heather Section -------- */
+
 .header {
     display: flex;
     align-items: center;
     justify-content:space-between;
     height: 120px;
     width: 100%;
-    /* padding: 40px; */
     padding: 3%;
-    background-color: rgb(207, 207, 207);
+    /* background-color: rgb(207, 207, 207); */
 }
 
 .logo-gif {
     max-height: 100%;
     height: auto;
     width: 150px
-    /* max-width: 40%; */
-    /* min-width: 30%; */
 }
 
 .header-blank {
-    min-width: 30px;
+    min-width: 50px;
 }
 
 .links {
@@ -38,7 +40,123 @@
 
 a {
     text-decoration: none;
+    font-weight: 500;
     color: black;
 }
 
-/* Hide the links */
+
+
+
+/* -------- Projects section -------- */
+
+.projects {
+    padding: 0 3%;
+}
+
+.row-01 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.row-01-A {
+    background-color: #F9F9F9;
+    margin: 0 1% 0 0;
+    width: 600px;
+    height: 800px;
+    border-radius: 15px;
+}
+
+.row-01-B {
+    background-color: #6788ff;
+    margin: 0 0 0 1%;
+    width: 70%;
+    height: 800px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.border-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(237, 145, 255,0);
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(73, 212, 255);
+    filter: blur(20px);
+    z-index: +1;
+}
+
+.button-reel-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: +2;  
+}
+
+.button-reel {
+    background-color: white;
+    padding: 6px 25px;
+    border: none;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.21);
+}
+
+.button-reel p {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.button-reel span {
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.row-01-B-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    filter: blur(80px);
+}
+
+
+/* wrap when screen is smaller */
+
+@media (max-width: 1024px) {
+    .row-01 {
+        flex-direction: column;
+    }
+    
+    .row-01-A, .row-01-B {
+        width: 100%;
+        height: 700px;
+        margin: 20px 0 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .row-01 {
+        flex-direction: column;
+    }
+    
+    .row-01-A, .row-01-B {
+        width: 100%;
+        height: 500px;
+        margin: 10px 0 10px 0;
+    }
+}
+
+/* .p-introduction {
+    text-align: center;
+}  */
