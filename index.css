@@ -65,6 +65,15 @@ a {
     width: 600px;
     height: 800px;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.row-01-A img {
+    max-width: 80%;
+    max-height: 95%;
 }
 
 .row-01-B {
